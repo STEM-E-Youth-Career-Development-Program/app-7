@@ -1,9 +1,9 @@
-const counterBtn = document.getElementById("counter")
+const counterBtn = document.getElementById("counter");
 
-let counter = 0
-const setCounter = (count) => {
-  counter = count
-  counterBtn.innerHTML = `Click Me: ${counter}`
-}
-counterBtn.addEventListener('click', () => setCounter(counter + 1))
-setCounter(0)
+let count = 1;
+const setButtonCounter = () => {
+  counterBtn.innerHTML = `Click Me: ${count}`
+  count += 1;
+};
+
+counterBtn.addEventListener('click', setButtonCounter);
