@@ -16,7 +16,6 @@
   - [ Built with](#built-with)
 - [ Getting Started](#getting-started)
   - [ Prerequisites](#prerequisites)
-  - [ API Page](#api-page)
   - [ How to Contribute](#how-to-contribute)
 
 <br>
@@ -44,7 +43,18 @@ App 7 creates quizzes based on student notes to help them prepare for exams.
 ## Getting Started
 
 This will give you instructions on how to set up your project locally.
-Follow these simple steps and/or watch the YouTube guides.
+
+Step 1: Open this repository in your GitHub account.
+
+Step 2: Fork this repository by clicking the button located at the right-hand upper corner. 
+
+Step 3: Open your Visual Studio Code.
+
+Step 4: Press ctrl + shift + p and enter Git: Clone in the text box
+
+Step 5: If your GitHub is already linked to Visual Studio Code, you can directly choose a repository to clone (Choose the repository you just created by forking). If it is not linked to Visual Studio Code already, go back to the repository click the Code button (Green), and get the link to the repository. After that, paste the link into the text box and fork it. 
+
+Step 6: Choose a folder to store the code. 
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
