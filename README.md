@@ -32,9 +32,14 @@ App 7 creates quizzes based on student notes to help them prepare for exams.
 
 ### Built With
 
-* ![HTML][React.js]
-* ![CSS][Google.api]
-* ![JavaScript][NPM.js]
+![Language](https://github.com/J12aGuan/app-7/assets/96441175/039c31d2-f7e7-4983-9130-13bc57ede620)
+
+
+If you are not familiar with these languages, please do these training courses(Finish about 25% of each):
+
+HTML: https://www.codecademy.com/learn/learn-html
+CSS: https://www.codecademy.com/learn/learn-css
+JavaScript: https://www.codecademy.com/enrolled/courses/introduction-to-javascript
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
@@ -62,7 +67,9 @@ Step 6: Choose a folder to store the code.
 
 ### Prerequisites
 
-These are the list of things you need for your local environment. You can start by installing <a href="https://code.visualstudio.com/">Visual Studio Code</a>, our most used code editor. 
+These are the list of things you need for your local environment. 
+
+You can start by installing <a href="https://code.visualstudio.com/">Visual Studio Code</a>, our most used code editor. 
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
@@ -100,9 +107,3 @@ Contributions are what make this community such an amazing place to learn, inspi
 [discord-shield]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2FNKDkE52HhH%3Fwith_counts%3Dtrue&query=%24.approximate_presence_count&suffix=%20Online&style=for-the-badge&logo=Discord&logoColor=white&label=Discord&color=%235864f4
 
 [discord-url]: https://discord.gg/2EuA82Xayg
-
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-
-[Google.api]: https://img.shields.io/badge/Google-black?style=for-the-badge&logo=google&color=%2320232A
-
-[NPM.js]: https://img.shields.io/badge/NPM-20232a?style=for-the-badge&logo=NPM
