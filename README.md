@@ -80,10 +80,10 @@ Open the folder that contains the code and you will see a browser in the folder.
 
 Contributions are what make this community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. With that said, there are a few ways you can add:
 
-- [Did you spot any errors?](https://github.com/STEM-E-Youth-Career-Development-Program/map-app/issues/new)
-- [What features could we add?](https://github.com/STEM-E-Youth-Career-Development-Program/map-app/issues/new)
-- [What would improve the app?](https://github.com/STEM-E-Youth-Career-Development-Program/map-app/issues/new) 
-- [How can we work better as a team?](https://github.com/STEM-E-Youth-Career-Development-Program/map-app/issues/new)
+- [Did you spot any errors?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new)
+- [What features could we add?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new)
+- [What would improve the app?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new) 
+- [How can we work better as a team?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new)
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
@@ -101,14 +101,8 @@ Contributions are what make this community such an amazing place to learn, inspi
 
 [discord-url]: https://discord.gg/2EuA82Xayg
 
-[product-screenshot]: images/screenshot.png
-
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 
 [Google.api]: https://img.shields.io/badge/Google-black?style=for-the-badge&logo=google&color=%2320232A
 
 [NPM.js]: https://img.shields.io/badge/NPM-20232a?style=for-the-badge&logo=NPM
-
-[node.js]: https://img.shields.io/badge/Node.js-20232a?style=for-the-badge&logo=Node.js
-
-[Expo]: https://img.shields.io/badge/Expo-20232a?style=for-the-badge&logo=Expo
