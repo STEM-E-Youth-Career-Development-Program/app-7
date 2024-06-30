@@ -26,18 +26,16 @@
 ## About The Project
 
 The STEME Youth Career Development
-Program's mapSTEM application tracks various events and activities in Science, Technology, Engineering, Math, and Entrepreneurship and makes it accessible and affordable for its users.
+App 7 creates quizzes based on student notes to help them prepare for exams.
 <br>
 <br>
 
 
 ### Built With
 
-* ![React][React.js]
-* ![Google][Google.api]
-* ![NPM][NPM.js]
-* ![Node.js][node.js]
-* ![Expo][Expo]
+* ![HTML][React.js]
+* ![CSS][Google.api]
+* ![JavaScript][NPM.js]
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
@@ -45,7 +43,7 @@ Program's mapSTEM application tracks various events and activities in Science, T
 
 ## Getting Started
 
-This is will give you instructions on how to set up your project locally.
+This will give you instructions on how to set up your project locally.
 Follow these simple steps and/or watch the YouTube guides.
 
 <br>
@@ -62,40 +60,11 @@ These are the list of things you need for your local environment. You can start 
 
 ### Running the App
 
-Use your code editor (e.g., <a href="https://code.visualstudio.com/">Visual Studio Code</a>) to run the following commands: 
-
-
-   ```sh
-   git clone https://github.com/STEM-E-Youth-Career-Development-Program/map-app.git
-   ```
-
-   ```sh
-   npm install
-   ```
-
-   ```sh
-   npm start
-   ```
-
+Open the folder that contains the code and you will see a browser in the folder. Click on the browser to open it.
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
 
-
-
-## API Page
-
-This contains a library of information (e.g., user information):
-
-```sh
-fetch('https://mapstem-api.azurewebsites.net/api/')
-```
-
-> [!TIP]
-> You can access the page [here](https://insertLinkHere.com)
-
-<br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 ## How to Contribute
 
