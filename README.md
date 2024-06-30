@@ -38,7 +38,9 @@ App 7 creates quizzes based on student notes to help them prepare for exams.
 If you are not familiar with these languages, please do these training courses(Finish about 25% of each):
 
 HTML: https://www.codecademy.com/learn/learn-html
+
 CSS: https://www.codecademy.com/learn/learn-css
+
 JavaScript: https://www.codecademy.com/enrolled/courses/introduction-to-javascript
 
 <br>
