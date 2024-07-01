@@ -101,10 +101,10 @@ Contributions are what make this community such an amazing place to learn, inspi
 <!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/STEM-E-Youth-Career-Development-Program/map-app.svg?style=for-the-badge
 
-[contributors-url]: https://github.com/STEM-E-Youth-Career-Development-Program/map-app/graphs/contributors
+[contributors-url]: https://github.com/STEM-E-Youth-Career-Development-Program/app-7/graphs/contributors
 
 [issues-shield]: https://img.shields.io/github/issues/STEM-E-Youth-Career-Development-Program/map-app.svg?style=for-the-badge
-[issues-url]: https://github.com/STEM-E-Youth-Career-Development-Program/map-app/issues
+[issues-url]: https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues
 
 [discord-shield]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2FNKDkE52HhH%3Fwith_counts%3Dtrue&query=%24.approximate_presence_count&suffix=%20Online&style=for-the-badge&logo=Discord&logoColor=white&label=Discord&color=%235864f4
 
