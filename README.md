@@ -14,8 +14,8 @@
 - [ About The Project](#about-the-project)
   - [ Built with](#built-with)
   - [ Resources](#resources)
-- [ Getting Started](#getting-started)
-  - [ Prerequisites](#prerequisites)
+- [ Prerequisites](#prerequisites)
+  - [ Connect to GitHub](#connect-to-github)
   - [ Running the App](#running-the-app)
 - [ How to Contribute](#how-to-contribute)
 
@@ -52,7 +52,15 @@ These materials are optional. You can learn with whatever strategy you prefer. I
 <br>
 
 
-## Getting Started
+## Prerequisites
+
+[<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/590c3ffd-efed-49af-a959-78042868db41">](https://youtu.be/GCCUwvlbDQ8)
+
+
+<br>
+
+
+### Connect to GitHub
 
 You can follow these steps to set up your environment locally
 1. Open this repository in your GitHub account.
@@ -66,13 +74,6 @@ You can follow these steps to set up your environment locally
 5. If your GitHub is already linked to Visual Studio Code, you can directly choose a repository to clone (Choose the repository you just created by forking). If it is not linked to Visual Studio Code already, go back to the repository click the Code button (Green), and get the link to the repository. After that, paste the link into the text box and fork it. 
 
 6. Choose a folder to store the code. 
-
-<br>
-
-### Prerequisites
-[<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/590c3ffd-efed-49af-a959-78042868db41">](https://youtu.be/GCCUwvlbDQ8)
-
-
 
 <br>
 
