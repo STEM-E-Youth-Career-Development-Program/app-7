@@ -13,7 +13,7 @@
 ## Table of Contents
 - [ About The Project](#about-the-project)
   - [ Built with](#built-with)
-    - [ Resources](#resources)
+  - [ Resources](#resources)
 - [ Getting Started](#getting-started)
   - [ Prerequisites](#prerequisites)
   - [ Running the App](#running-the-app)
@@ -31,23 +31,23 @@ This website gears toward students who want their notes to be summarized and imp
   - generate a quiz from those notes
 
 <br>
+<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 ### Built With
 ![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/aa59839b-1c17-4c06-bf96-6eafebb2f35e)
 
 Uses simple HTML, CSS, and JavaScript to keep the website lightweight and easy to maintain
 
-#### Resources
+<br>
+<p align="right"><a href="#readme-top">-back to top-</a></p>
+
+### Resources
 
 Here are free online courses to learn these languages
 
   - [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
   - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
   - [Codeacademy's JavaScript](https://www.codecademy.com/enrolled/courses/introduction-to-javascript)
-
-
-<br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 
 <br>
@@ -77,9 +77,11 @@ You can follow these steps to set up your environment locally
 
 Recommended tools before setting running the app
 
-1. Installing a code editor like <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+- Installing a code editor like <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+
 
 <br>
+<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 ### Running the App
 
