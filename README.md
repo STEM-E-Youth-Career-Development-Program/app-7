@@ -16,7 +16,7 @@
   - [ Resources](#resources)
 - [ Prerequisites](#prerequisites)
   - [ Connect to GitHub](#connect-to-github)
-  - [ Running the App](#running-the-app)
+  - [ Run the App](#run-the-app)
 - [ How to Contribute](#how-to-contribute)
 
 <br>
@@ -77,7 +77,7 @@ You can follow these steps to set up your environment locally
 
 <br>
 
-### Running the App
+### Run the App
 
 Open the folder that contains the code and you will see a browser in the folder. Click on the browser to open it.
 
