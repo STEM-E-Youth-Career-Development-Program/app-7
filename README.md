@@ -23,19 +23,16 @@
 
 
 ## About The Project
-
-[ add visuals here ]
+![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/8b945447-424d-4575-b09b-f560b043c25c)
 
 This website gears toward students who want their notes to be summarized and improve their understanding of concepts. The app will serve two primary purposes: 
   1. summarizes user notes
   2. generate a quiz from those notes
 
-
-<br>
 <br>
 
 ### Built With
-[ add visuals here ]
+![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/aa59839b-1c17-4c06-bf96-6eafebb2f35e)
 
 Made with simple HTML, CSS, and JavaScript to keep the website lightweight and easy to maintain
 
