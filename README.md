@@ -55,7 +55,7 @@ These materials are optional. You can learn with whatever strategy you prefer. I
 ## Prerequisites
 
 [<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/590c3ffd-efed-49af-a959-78042868db41">](https://youtu.be/GCCUwvlbDQ8)
-
+[Not working? Use this link](https://youtu.be/GCCUwvlbDQ8)
 
 <br>
 
