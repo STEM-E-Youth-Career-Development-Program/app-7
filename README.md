@@ -20,30 +20,29 @@
 - [ How to Contribute](#how-to-contribute)
 
 <br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 
 ## About The Project
-![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/8b945447-424d-4575-b09b-f560b043c25c)
 
 This website gears toward students who want their notes to be summarized and improve their understanding of concepts. The app will serve two primary purposes: 
   - summarizes user notes
   - generate a quiz from those notes
 
+![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/8b945447-424d-4575-b09b-f560b043c25c)
+
 <br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 ### Built With
-![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/aa59839b-1c17-4c06-bf96-6eafebb2f35e)
 
 Uses simple HTML, CSS, and JavaScript to keep the website lightweight and easy to maintain
 
+![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/aa59839b-1c17-4c06-bf96-6eafebb2f35e)
+
 <br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 ### Resources
 
-These materials are optional. You can learn with whatever strategy you prefer. If you are unsure, here are some courses to help you learn these languages
+These materials are optional. You can learn with whatever strategy you prefer. If you are unsure, you can use these courses to learn these languages
 
   - [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
   - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
@@ -51,7 +50,6 @@ These materials are optional. You can learn with whatever strategy you prefer. I
 
 
 <br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 
 ## Getting Started
@@ -70,25 +68,26 @@ You can follow these steps to set up your environment locally
 6. Choose a folder to store the code. 
 
 <br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
-
 
 ### Prerequisites
 
 Recommended tools before setting running the app
 
 - Installing a code editor like <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+  - Make live changes with the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> extension
+
+  - Open the webpage inside of Visual Studio Code using <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a>
+
+  - Keep your code neat and organized with <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>
 
 
 <br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 ### Running the App
 
 Open the folder that contains the code and you will see a browser in the folder. Click on the browser to open it.
 
 <br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 
 ## How to Contribute
