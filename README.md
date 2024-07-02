@@ -43,7 +43,7 @@ Uses simple HTML, CSS, and JavaScript to keep the website lightweight and easy t
 
 ### Resources
 
-Here are free online courses to learn these languages
+These materials are optional. You can learn with whatever strategy you prefer. If you are unsure, here are some courses to help you learn these languages
 
   - [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
   - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
