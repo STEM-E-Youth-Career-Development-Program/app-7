@@ -24,24 +24,29 @@
 
 ## About The Project
 
-The STEME Youth Career Development
-App 7 creates quizzes based on student notes to help them prepare for exams.
-<br>
-<br>
+[ add visuals here ]
 
+This website gears toward students who want their notes to be summarized and improve their understanding of concepts. The app will serve two primary purposes: 
+  1. summarizes user notes
+  2. generate a quiz from those notes
+
+
+<br>
+<br>
 
 ### Built With
+[ add visuals here ]
 
-![Language](https://github.com/J12aGuan/app-7/assets/96441175/039c31d2-f7e7-4983-9130-13bc57ede620)
+Made with simple HTML, CSS, and JavaScript to keep the website lightweight and easy to maintain
 
+#### Resources
 
-If you are not familiar with these languages, please do these training courses(Finish about 25% of each):
+Here are free online courses to learn these languages
 
-HTML: https://www.codecademy.com/learn/learn-html
+1. [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
+2. [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
+3. [Codeacademy's JavaScript](https://www.codecademy.com/enrolled/courses/introduction-to-javascript)
 
-CSS: https://www.codecademy.com/learn/learn-css
-
-JavaScript: https://www.codecademy.com/enrolled/courses/introduction-to-javascript
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
