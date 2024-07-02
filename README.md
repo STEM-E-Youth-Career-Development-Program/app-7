@@ -10,38 +10,45 @@
 <br />
 
 <!-- shortcuts -->
-
 ## Table of Contents
 - [ About The Project](#about-the-project)
   - [ Built with](#built-with)
+  - [ Resources](#resources)
 - [ Getting Started](#getting-started)
   - [ Prerequisites](#prerequisites)
-  - [ How to Contribute](#how-to-contribute)
+  - [ Running the App](#running-the-app)
+- [ How to Contribute](#how-to-contribute)
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
 
 
 ## About The Project
+![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/8b945447-424d-4575-b09b-f560b043c25c)
 
-The STEME Youth Career Development
-App 7 creates quizzes based on student notes to help them prepare for exams.
-<br>
-<br>
+This website gears toward students who want their notes to be summarized and improve their understanding of concepts. The app will serve two primary purposes: 
+  - summarizes user notes
+  - generate a quiz from those notes
 
+<br>
+<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 ### Built With
+![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/aa59839b-1c17-4c06-bf96-6eafebb2f35e)
 
-![Language](https://github.com/J12aGuan/app-7/assets/96441175/039c31d2-f7e7-4983-9130-13bc57ede620)
+Uses simple HTML, CSS, and JavaScript to keep the website lightweight and easy to maintain
 
+<br>
+<p align="right"><a href="#readme-top">-back to top-</a></p>
 
-If you are not familiar with these languages, please do these training courses(Finish about 25% of each):
+### Resources
 
-HTML: https://www.codecademy.com/learn/learn-html
+Here are free online courses to learn these languages
 
-CSS: https://www.codecademy.com/learn/learn-css
+  - [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
+  - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
+  - [Codeacademy's JavaScript](https://www.codecademy.com/enrolled/courses/introduction-to-javascript)
 
-JavaScript: https://www.codecademy.com/enrolled/courses/introduction-to-javascript
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
@@ -49,19 +56,18 @@ JavaScript: https://www.codecademy.com/enrolled/courses/introduction-to-javascri
 
 ## Getting Started
 
-This will give you instructions on how to set up your project locally.
+You can follow these steps to set up your environment locally
+1. Open this repository in your GitHub account.
 
-Step 1: Open this repository in your GitHub account.
+2. Fork this repository by clicking the button located at the right-hand upper corner. 
 
-Step 2: Fork this repository by clicking the button located at the right-hand upper corner. 
+3. Open your Visual Studio Code.
 
-Step 3: Open your Visual Studio Code.
+4. Press ctrl + shift + p and enter Git: Clone in the text box
 
-Step 4: Press ctrl + shift + p and enter Git: Clone in the text box
+5. If your GitHub is already linked to Visual Studio Code, you can directly choose a repository to clone (Choose the repository you just created by forking). If it is not linked to Visual Studio Code already, go back to the repository click the Code button (Green), and get the link to the repository. After that, paste the link into the text box and fork it. 
 
-Step 5: If your GitHub is already linked to Visual Studio Code, you can directly choose a repository to clone (Choose the repository you just created by forking). If it is not linked to Visual Studio Code already, go back to the repository click the Code button (Green), and get the link to the repository. After that, paste the link into the text box and fork it. 
-
-Step 6: Choose a folder to store the code. 
+6. Choose a folder to store the code. 
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
@@ -69,13 +75,13 @@ Step 6: Choose a folder to store the code.
 
 ### Prerequisites
 
-These are the list of things you need for your local environment. 
+Recommended tools before setting running the app
 
-You can start by installing <a href="https://code.visualstudio.com/">Visual Studio Code</a>, our most used code editor. 
+- Installing a code editor like <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
-
 
 ### Running the App
 
@@ -87,12 +93,14 @@ Open the folder that contains the code and you will see a browser in the folder.
 
 ## How to Contribute
 
-Contributions are what make this community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. With that said, there are a few ways you can add:
+Contributions are what make this community such an amazing place to learn, inspire, and create! There are a many ways you can help
 
 - [Did you spot any errors?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new)
 - [What features could we add?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new)
 - [What would improve the app?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new) 
 - [How can we work better as a team?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new)
+
+Any contributions you make are **greatly appreciated**! 
 
 <br>
 <p align="right"><a href="#readme-top">-back to top-</a></p>
