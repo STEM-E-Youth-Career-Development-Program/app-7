@@ -70,15 +70,8 @@ You can follow these steps to set up your environment locally
 <br>
 
 ### Prerequisites
+[<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/590c3ffd-efed-49af-a959-78042868db41">](https://youtu.be/GCCUwvlbDQ8)
 
-Recommended tools before setting running the app
-
-- Installing a code editor like <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-  - Make live changes with the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> extension
-
-  - Open the webpage inside of Visual Studio Code using <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a>
-
-  - Keep your code neat and organized with <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>
 
 
 <br>
