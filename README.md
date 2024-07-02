@@ -42,7 +42,7 @@ Uses simple HTML, CSS, and JavaScript to keep the website lightweight and easy t
 
 ### Resources
 
-These materials are optional. You can learn with whatever strategy you prefer. If you are unsure, you can use these courses to learn these languages
+These materials are optional. You can learn with whatever strategy you prefer, but we recommend these courses to learn HTML, CSS, and JavaScript
 
   - [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
   - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
