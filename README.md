@@ -30,7 +30,9 @@
 
 ### Built With
 
-![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/aa59839b-1c17-4c06-bf96-6eafebb2f35e)
+* ![Static Badge](https://img.shields.io/badge/HTML-%23212329?style=for-the-badge&logo=HTML5)
+* ![Static Badge](https://img.shields.io/badge/CSS-%23212329?style=for-the-badge&logo=CSS3)
+* ![Static Badge](https://img.shields.io/badge/JavaScript-%23212329?style=for-the-badge&logo=JavaScript)
 
 <br>
 
