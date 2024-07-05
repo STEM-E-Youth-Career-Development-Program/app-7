@@ -24,10 +24,6 @@
 
 ## About The Project
 
-The app will serve two primary purposes: 
-  - summarizes user notes
-  - generate a quiz from those notes
-
 ![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/8b945447-424d-4575-b09b-f560b043c25c)
 
 <br>
