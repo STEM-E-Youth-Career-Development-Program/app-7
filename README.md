@@ -62,18 +62,8 @@ These materials are optional. You can learn with whatever strategy you prefer, b
 
 ### Connect to GitHub
 
-You can follow these steps to set up your environment locally
-1. Open this repository in your GitHub account.
-
-2. Fork this repository by clicking the button located at the right-hand upper corner. 
-
-3. Open your Visual Studio Code.
-
-4. Press ctrl + shift + p and enter Git: Clone in the text box
-
-5. If your GitHub is already linked to Visual Studio Code, you can directly choose a repository to clone (Choose the repository you just created by forking). If it is not linked to Visual Studio Code already, go back to the repository click the Code button (Green), and get the link to the repository. After that, paste the link into the text box and fork it. 
-
-6. Choose a folder to store the code. 
+[<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/415bdbfe-cdb5-4163-9f59-cd98e6705bf4">](https://youtu.be/Br9dBeiTdIU)
+[Not working? Use this link](https://youtu.be/Br9dBeiTdIU)
 
 <br>
 
