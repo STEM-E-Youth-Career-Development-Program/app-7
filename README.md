@@ -40,7 +40,7 @@ The app will serve two primary purposes:
 
 ### Resources
 
-The project uses simple HTML, CSS, and JavaScript to keep things lightweight and easy to maintain. Therefore, we recommend building foundational knowledge in these languages. Of course, these materials are optional, and you may learn with whatever strategy you prefer. Otherwise, we suggest taking these courses *(complete at least 25% of each course)*
+The project uses simple HTML, CSS, and JavaScript to keep things lightweight and easy to maintain. Therefore, we recommend building foundational knowledge. These materials are optional, and you may learn with whatever strategy you prefer. Otherwise, we suggest taking these courses *(complete at least 25% of each course)*
 
   - [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
   - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
