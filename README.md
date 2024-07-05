@@ -1,13 +1,9 @@
-<a name="readme-top"></a>
-
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 [![Discord-Server][discord-shield]][discord-url]
 
-
-<!-- Logo -->
 <br />
+
 
 <!-- shortcuts -->
 ## Table of Contents
@@ -28,6 +24,7 @@
 
 <br>
 
+
 ### Built With
 
 * ![Static Badge](https://img.shields.io/badge/HTML-%23212329?style=for-the-badge&logo=HTML5)
@@ -35,6 +32,7 @@
 * ![Static Badge](https://img.shields.io/badge/JavaScript-%23212329?style=for-the-badge&logo=JavaScript)
 
 <br>
+
 
 ### Resources
 
@@ -59,7 +57,6 @@ In addition, we recommend using Microsoft's Visual Studio Code editor with some 
 [<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/590c3ffd-efed-49af-a959-78042868db41">](https://youtu.be/GCCUwvlbDQ8)
 [Not working? Use this link](https://youtu.be/GCCUwvlbDQ8)
 
-
 <br>
 
 
@@ -69,6 +66,7 @@ In addition, we recommend using Microsoft's Visual Studio Code editor with some 
 [Not working? Use this link](https://youtu.be/Br9dBeiTdIU)
 
 <br>
+
 
 ### Launch the Website
 
@@ -88,9 +86,6 @@ Contributions are what make this community such an amazing place to learn, inspi
 - [How can we work better as a team?](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/issues/new)
 
 Any contributions you make are **greatly appreciated**! 
-
-<br>
-<p align="right"><a href="#readme-top">-back to top-</a></p>
 
 
 <!-- Links -->
