@@ -34,15 +34,13 @@ The app will serve two primary purposes:
 
 ### Built With
 
-Uses simple HTML, CSS, and JavaScript to keep the website lightweight and easy to maintain
-
 ![Image](https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/aa59839b-1c17-4c06-bf96-6eafebb2f35e)
 
 <br>
 
 ### Resources
 
-These materials are optional. You can learn with whatever strategy you prefer, but we recommend these courses to learn HTML, CSS, and JavaScript *(complete at least 25% of each course)*
+The project uses simple HTML, CSS, and JavaScript to keep things lightweight and easy to maintain. Therefore, we recommend building foundational knowledge in these languages. Of course, these materials are optional, and you may learn with whatever strategy you prefer. Otherwise, we suggest taking these courses *(complete at least 25% of each course)*
 
   - [Codeacademy's HTML](https://www.codecademy.com/learn/learn-html)
   - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
