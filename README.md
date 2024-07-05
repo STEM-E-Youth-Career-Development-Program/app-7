@@ -76,7 +76,8 @@ In addition, we recommend using Microsoft's Visual Studio Code editor with some 
 
 ### Launch the Website
 
-Open the folder that contains the code and you will see a browser in the folder. Click on the browser to open it.
+[<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/09b34ca0-95f8-42fd-82cc-6d3af31d3589">](https://youtu.be/9zteNOpoi-k)
+[Not working? Use this link](https://youtu.be/9zteNOpoi-k)
 
 <br>
 
