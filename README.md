@@ -24,7 +24,7 @@
 
 ## About The Project
 
-This website gears toward students who want their notes to be summarized and improve their understanding of concepts. The app will serve two primary purposes: 
+The app will serve two primary purposes: 
   - summarizes user notes
   - generate a quiz from those notes
 
@@ -48,6 +48,12 @@ These materials are optional. You can learn with whatever strategy you prefer, b
   - [Codeacademy's CSS](https://www.codecademy.com/learn/learn-css)
   - [Codeacademy's JavaScript](https://www.codecademy.com/enrolled/courses/introduction-to-javascript)
 
+In addition, we recommend using Microsoft's Visual Studio Code editor with some handy plug-ins
+
+  - [Visual Studio Code](https://code.visualstudio.com)
+    - [Live Server Plug-in](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+    - [Prettier Plug-in](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    - [Live Preview Plug-in](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
 
 <br>
 
@@ -56,6 +62,7 @@ These materials are optional. You can learn with whatever strategy you prefer, b
 
 [<img src="https://github.com/STEM-E-Youth-Career-Development-Program/app-7/assets/154091778/590c3ffd-efed-49af-a959-78042868db41">](https://youtu.be/GCCUwvlbDQ8)
 [Not working? Use this link](https://youtu.be/GCCUwvlbDQ8)
+
 
 <br>
 
