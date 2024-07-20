@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Ready</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h1 {
+            color: #00f;
+            font-size: 24px;
+        }
+        .sidebar a {
+            color: #bbb;
+            text-decoration: none;
+            display: block;
+            margin: 15px 0;
+        }
+        .sidebar a:hover {
+            color: #fff;
+        }
+        .main {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            width: 100%;
+            background-color: #444;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #555;
+        }
+        #responseBox {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Not Ready</h1>
+        <a href="#">Home</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Settings</a>
+    </div>
+    <div class="main">
+        <div class="content">
+            <textarea id="mainText" placeholder="Enter your prompt here..."></textarea>
+            <div class="buttons">
+                <button id="importTextButton">Import Text</button>
+                <button id="importFileButton">Import File</button>
+                <button id="quizButton">Quiz</button>
+                <button id="summarizeButton">Summarize</button>
+                <button id="enhanceButton">Enhance</button>
+            </div>
+            <div id="responseBox"></div>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <script type="module">
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+
+        const genAI = new GoogleGenerativeAI("AIzaSyD60yb7EjCaeOszNSfYvfBcArtrXo67sSM");
+
+        document.getElementById('summarizeButton').addEventListener('click', summarizeText);
+
+        async function summarizeText() {
+            const userInput = document.getElementById('mainText').value;
+            if (userInput.trim() === "") {
+                document.getElementById('responseBox').innerText = "Please enter some text.";
+                return;
+            }
+
+            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+            try {
+                const result = await model.generateContent(userInput);
+                const text = await result.response.text();
+                console.log(text);
+                document.getElementById('responseBox').innerText = text;
+            } catch (error) {
+                console.error("Error generating content:", error);
+                document.getElementById('responseBox').innerText = "Sorry, there was an error generating the response.";
+            }
+        }
+    </script>
+</body>
+</html>
