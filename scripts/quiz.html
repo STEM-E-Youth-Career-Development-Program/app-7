@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Ready</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h1 {
+            color: #00f;
+            font-size: 24px;
+        }
+        .sidebar a {
+            color: #bbb;
+            text-decoration: none;
+            display: block;
+            margin: 15px 0;
+        }
+        .sidebar a:hover {
+            color: #fff;
+        }
+        .main {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            width: 100%;
+            background-color: #444;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #555;
+        }
+        
+        #responseBox {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Not Ready</h1>
+        <a href="#">Home</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Settings</a>
+    </div>
+    <div class="main">
+        <div class="content">
+            <div id="questionBox" class="question">Question will appear here</div>
+            <ul id="optionsBox" class="options">
+                <!-- Options will appear here -->
+            </ul>
+            <div class="buttons">
+                <button id="prevButton" onclick="prevQuestion()">Previous</button>
+                <button id="nextButton"  onclick="nextQuestion()">Next</button>
+                <button id="submitButton" onclick="submitQuiz()">Submit</button>
+            </div>
+            <div id="responseBox"></div>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <script>
+        const questions = [
+            {
+                // We will end up putting the questions that the AI gives us into this dictionary for the quiz. 
+                question: "Which city is in France",
+                options: ["Berlin", "Madrid", "Paris", "Lisbon"],
+                answer: "Paris"
+            },
+            {
+                question: "2 + 2?",
+                options: ["3", "4", "5", "6"],
+                answer: "4"
+            },
+            {
+                question: "What is the 4th planet from the sun",
+                options: ["Uranus", "Mars", "Jupiter", "Venus"],
+                answer: "Mars"
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let userAnswers = new Array(questions.length); // this is for what the user puts in 
+
+        function loadQuestion(index) { //puts in each question
+            const questionBox = document.getElementById("questionBox");
+            const optionsBox = document.getElementById("optionsBox");
+            const question = questions[index];
+            
+            questionBox.innerText = question.question;
+            optionsBox.innerHTML = "";
+
+            question.options.forEach((option, i) => {
+                const li = document.createElement("li");
+                const input = document.createElement("input");
+                input.type = "radio";
+                input.name = "option";
+                input.value = option;
+                input.id = `option${i}`;
+
+                if (userAnswers[index] === option) {
+                    input.checked = true;
+                }
+
+                const label = document.createElement("label");
+                label.htmlFor = input.id;
+                label.innerText = option;
+
+                li.appendChild(input);
+                li.appendChild(label);
+                optionsBox.appendChild(li);
+            });
+        }
+
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                saveAnswer();
+                currentQuestionIndex--;
+                loadQuestion(currentQuestionIndex);
+            }
+            else{
+                const prevButton = document.getElementById("nextButton");
+                prevButton.disabled = true;
+                prevButton.style.color = "#888";
+            }
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < questions.length - 1) {
+                saveAnswer();
+                currentQuestionIndex++;
+                loadQuestion(currentQuestionIndex);
+            }
+            else{
+                const nextButton = document.getElementById("nextButton");
+                nextButton.disabled = true;
+                nextButton.style.color = "#888";
+            }
+        }
+
+        function saveAnswer() {
+            const options = document.getElementsByName("option");
+            for (const option of options) {
+                if (option.checked) {
+                    userAnswers[currentQuestionIndex] = option.value;
+                    break;
+                }
+            }
+        }
+
+        function submitQuiz() {
+            saveAnswer();
+            let score = 0;
+            for (let i = 0; i < questions.length; i++) {
+                if (userAnswers[i] === questions[i].answer) {
+                    score++;
+                }
+            }
+            const responseBox = document.getElementById("responseBox");
+            responseBox.innerText = `You scored ${score} out of ${questions.length}`;
+        }
+
+        window.onload = function() {
+            loadQuestion(currentQuestionIndex);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
