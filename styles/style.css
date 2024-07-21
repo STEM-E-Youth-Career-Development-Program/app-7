@@ -1,47 +1,66 @@
+/* color palette */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --background-color: #252526;
+  --primary-color: #1c1c1c;
+  --secondary-color: rgba(255, 255, 255, 0.85);
+  --accent-color: rgba(0, 148, 255, 0.85);
+  --not-selected-color: rgba(28, 28, 28, 0.75);
+  --border-radius: 10px;
+}
+
+/* general styles */
+.input-file-box,
+.import-text-box,
+#text-tab,
+#file-tab {
+  background: var(--primary-color);
+  border-radius: var(--border-radius);
 }
 
 body {
-  margin: 0;
+  align-items: center;
+  background: var(--background-color);
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
   justify-content: center;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.input-file-box,
+.import-text-box {
+  color: var(--secondary-color);
+  height: 300px;
+  width: 600px;
 }
 
-.logo {
-  height: 10em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.non-selected-tab {
+  color: var(--secondary-color);
+  background: var(--not-selected-color);
+  transition: text-shadow 300ms, color 300ms;
 }
 
-.javascript.logo:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.non-selected-tab:hover {
+  text-shadow: 0 0 5px var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+#text-tab,
+#file-tab {
+  padding: 10px;
+  font-weight: 800;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.read-the-docs {
-  color: #888;
+.selected-tab {
+  color: var(--accent-color);
+  background: var(--primary-color);
 }
