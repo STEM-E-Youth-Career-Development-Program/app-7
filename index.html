@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./resources/scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>NoteSage</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>NoteSage</h1>
+        <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
+        <a href="#" class="nav-link"><i class="fas fa-external-link-alt"></i></a>
+        <a href="#" class="nav-link"><i class="fas fa-cog"></i></a>
+    </div>
+    <div class="main">
+        <div class="content">
+            <textarea id="mainText" placeholder="Enter your prompt here..."></textarea>
+            <div class="buttons">
+                <button id="importTextButton">Import Text</button>
+                <button id="importFileButton">Import File</button>
+                <button id="quizButton">Quiz</button>
+                <button id="summarizeButton">Summarize</button>
+                <button id="enhanceButton">Enhance</button>
+            </div>
+            <div id="responseBox"></div>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <script type="module">
+        import { GoogleGenerativeAI } from "@google/generative-ai";
 
-    <!-- External stylesheets -->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/button.css" />
-  </head>
-  <body>
-    <!-- main content -->
-    <div id="main-container"></div>
-    
-    <script src="scripts/main.js"></script>
-  </body>
+        const genAI = new GoogleGenerativeAI("AIzaSyD60yb7EjCaeOszNSfYvfBcArtrXo67sSM");
+
+        document.getElementById('summarizeButton').addEventListener('click', summarizeText);
+
+        async function summarizeText() {
+            const userInput = document.getElementById('mainText').value;
+            if (userInput.trim() === "") {
+                document.getElementById('responseBox').innerText = "Please enter some text.";
+                return;
+            }
+
+            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+            try {
+                const result = await model.generateContent(userInput);
+                const text = await result.response.text();
+                console.log(text);
+                document.getElementById('responseBox').innerText = text;
+            } catch (error) {
+                console.error("Error generating content:", error);
+                document.getElementById('responseBox').innerText = "Sorry, there was an error generating the response.";
+            }
+        }
+    </script>
+</body>
 </html>
