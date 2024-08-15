@@ -36,3 +36,17 @@ const clickEvents = () => {
 
 // initialize content
 activeTab("text")
+
+
+//basically event listeners to handle when the user wants to upload files when clicking the importFileButton
+document.getElementById('importFileButton').addEventListener('click', function() {
+  document.getElementById('fileInput').click();
+});
+
+document.getElementById('fileInput').addEventListener('change', function(event) {
+  // Handle the file selection
+  const file = event.target.files[0];
+  if (file) {
+      console.log(`File selected: ${file.name}`);
+  }
+});

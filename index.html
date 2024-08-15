@@ -19,8 +19,20 @@
         <div class="content">
             <textarea id="mainText" placeholder="Enter your prompt here..."></textarea>
             <div class="buttons">
-                <button id="importTextButton">Import Text</button>
-                <button id="importFileButton">Import File</button>
+                <button id="importTextButton">Import Text
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <label for="fileInput"></label>
+                        <input type="file" id="fileInput" name="fileInput">
+                    </form>
+                </button>
+
+                <button id="importFileButton">Import File
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <label for="fileInput"></label>
+                        <input type="file" id="fileInput" name="file">
+                    </form>
+                </button>
+                
                 <button id="quizButton">Quiz</button>
                 <button id="summarizeButton">Summarize</button>
                 <button id="enhanceButton">Enhance</button>
