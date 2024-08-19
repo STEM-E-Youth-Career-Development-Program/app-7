@@ -19,19 +19,28 @@
         <div class="content">
             <textarea id="mainText" placeholder="Enter your prompt here..."></textarea>
             <div class="buttons">
-                <button id="importTextButton">Import Text
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <label for="fileInput"></label>
-                        <input type="file" id="fileInput" name="fileInput">
-                    </form>
-                </button>
 
-                <button id="importFileButton">Import File
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <label for="fileInput"></label>
-                        <input type="file" id="fileInput" name="file">
-                    </form>
-                </button>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <label for="fileInput">
+                        Import Handwritten Notes
+                    </label>
+                    <input type="file" id="handwrittenInput" name="file" style="display: none;">
+                </form>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <label for="fileInput">
+                        Import txt
+                    </label>
+                    <input type="file" id="txtInput" name="file" style="display: none;">
+                </form>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <label for="fileInput">
+                        Import File
+                    </label>
+                    <input type="file" id="fileInput" name="file" style="display: none;">
+                </form>
+                
                 
                 <button id="quizButton">Quiz</button>
                 <button id="summarizeButton">Summarize</button>
