@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./resources/scripts/processor.js" defer></script>
     <script src="./resources/scripts/main.js" defer></script>
     <link rel="stylesheet" href="./resources/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -28,10 +29,10 @@
                 </form>
 
                 <form action="" method="post" enctype="multipart/form-data">
-                    <label for="fileInput">
+                    <label for="txtInput">
                         Import txt
                     </label>
-                    <input type="file" id="txtInput" name="file" style="display: none;">
+                    <input type="file" id="txtInput" name="file" style="display: none;" onchange="previewFile()">
                 </form>
 
                 <form action="" method="post" enctype="multipart/form-data">
