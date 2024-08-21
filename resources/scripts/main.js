@@ -1,52 +1,25 @@
-const mainContainer = document.getElementById("main-container");
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// conditions
-const activeTab = (tab) => {
-  if (tab === "text") {
-    mainContainer.innerHTML = `
-    <span id="text-tab" class="selected-tab">Import Text</span>
-    <span id="file-tab" class="non-selected-tab">Import File</span>
-    <div class="import-text-box"></div>
-  `;
-  } else if (tab === "file") {
-    mainContainer.innerHTML = `
-    <span id="text-tab" class="non-selected-tab">Import Text</span>
-    <span id="file-tab" class="selected-tab">Import File</span>
-    <div class="input-file-box"></div>
-  `;
-  };
+const genAI = new GoogleGenerativeAI("AIzaSyD60yb7EjCaeOszNSfYvfBcArtrXo67sSM");
 
-  // updates
-  clickEvents();
-};
+document.getElementById('summarizeButton').addEventListener('click', summarizeText);
 
-// setting up listeners
-const clickEvents = () => {
-  const importTextBtn = document.getElementById("text-tab");
-  const importFileBtn = document.getElementById("file-tab");
+async function summarizeText() {
+    const userInput = document.getElementById('mainText').value;
+    if (userInput.trim() === "") {
+        document.getElementById('responseBox').innerText = "Please enter some text.";
+        return;
+    }
 
-  importFileBtn.addEventListener("click", () => {
-    activeTab("file");
-  });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-  importTextBtn.addEventListener("click", () => {
-    activeTab("text");
-  });
-};
-
-// initialize content
-activeTab("text")
-
-
-//basically event listeners to handle when the user wants to upload files when clicking the importFileButton
-document.getElementById('importFileButton').addEventListener('click', function() {
-  document.getElementById('fileInput').click();
-});
-
-document.getElementById('fileInput').addEventListener('change', function(event) {
-  // Handle the file selection
-  const file = event.target.files[0];
-  if (file) {
-      console.log(`File selected: ${file.name}`);
-  }
-});
+    try {
+        const result = await model.generateContent(userInput);
+        const text = await result.response.text();
+        console.log(text);
+        document.getElementById('responseBox').innerText = text;
+    } catch (error) {
+        console.error("Error generating content:", error);
+        document.getElementById('responseBox').innerText = "Sorry, there was an error generating the response.";
+    }
+}
