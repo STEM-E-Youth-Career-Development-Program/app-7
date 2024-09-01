@@ -1,0 +1,137 @@
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    background-color: #252526;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flashcard {
+    width: 500px;
+    height: 300px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #1C1C1C;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+/* Container for the buttons */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    gap: 70px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.trash-button, .plus-button, #next {
+    background-color: #1C1C1C;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.plus-button {
+    background-color: #1C1C1C;
+    font-size: 24px; 
+}
+
+#next {
+    background-color: #1C1C1C;
+    font-size: 16px;
+    width: auto;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.trash-button:hover, .plus-button:hover, #next:hover {
+    background-color: #0056b3;
+}
+
+.plus-button:hover {
+    background-color: #0056b3;
+}
+
+#next:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    display: none;
+    margin-top: 100px;
+    color: white;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #1C1C1C;
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #1C1C1C;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

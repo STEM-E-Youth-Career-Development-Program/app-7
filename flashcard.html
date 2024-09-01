@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/flashcard_styles.css">
+</head>
+<body>
+    <div class="flashcard" id="flashcard">
+        <div class="content" id="content">
+            <div class="front" id="front">Question</div>
+            <div class="back" id="back">Answer</div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="add-flashcard-btn" class="plus-button">+</button>
+        <button id="next">Next</button>
+        <button id="delete-flashcard-btn" class="trash-button">&#128465;</button>
+    </div>
+
+    <div class="form-container" id="form-container">
+        <h2>Create a Flashcard</h2>
+        <form id="flashcard-form">
+            <input type="text" id="question-input" placeholder="Enter question" required>
+            <input type="text" id="answer-input" placeholder="Enter answer" required>
+            <button type="submit">Add Flashcard</button>
+        </form>
+    </div>
+
+    <script src="./resources/scripts/flashcard_script.js"></script>
+</body>
+</html>
