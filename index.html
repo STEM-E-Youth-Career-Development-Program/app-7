@@ -6,7 +6,8 @@
     <script src="./resources/scripts/processor.js" defer></script>
     <link rel="stylesheet" href="./resources/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>NoteSage Example for Pull Request</title>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+        <title>NoteSage</title>
 </head>
 <body>
     <div class="sidebar">
@@ -23,10 +24,10 @@
             <div class="buttons">
 
                 <form action="" method="post" enctype="multipart/form-data">
-                    <label for="fileInput">
-                        Import Handwritten Notes
+                    <label for="imageInput">
+                        Import Images
                     </label>
-                    <input type="file" id="handwrittenInput" name="file" style="display: none;">
+                    <input type="file" id="imageInput" name="file" style="display: none;" onchange="processHandwrittenNotes(event)">
                 </form>
 
                 <form action="" method="post" enctype="multipart/form-data">
@@ -60,6 +61,7 @@
         }
         </script>
         <script type="module" src="./resources/scripts/main.js"></script>
-        <script type="module" src="./resources/scripts/flashcard_script.js"></script>s
+        <script type="module" src="./resources/scripts/flashcard_script.js"></script>
+        <script src="./resources/scripts/image_processing.js" defer></script>
 </body>
 </html>
