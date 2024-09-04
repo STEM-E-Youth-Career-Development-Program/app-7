@@ -3,65 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./resources/scripts/processor.js" defer></script>
     <link rel="stylesheet" href="./resources/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
-        <title>NoteSage</title>
+    <title>Login Page</title>
 </head>
 <body>
-    <div class="sidebar">
-        <h1>NoteSage</h1>
-        <a href="index.html" class="nav-link"><i class="fas fa-home"></i></a>
-        <a href="flashcard.html" class="nav-link"><i class="fas fa-folder"></i></a>
-        <a href="terms-of-service.html" class="nav-link"><i class="fas fa-external-link-alt"></i></a>
-        <a href="settings.html" class="nav-link"><i class="fas fa-cog"></i></a>
-        <a href="#" class="nav-link"><i class="fas fa-sign-out-alt"></i></a>
-    </div>
-    <div class="main">
-        <div class="content">
-            <textarea id="mainText" placeholder="Enter your prompt here..."></textarea>
-            <div class="buttons">
+    <div class="login">
+        <h1>Login to Notesage</h1>
+        <form action="home.html" method="post">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required>
 
-                <form action="" method="post" enctype="multipart/form-data">
-                    <label for="imageInput">
-                        Import Images
-                    </label>
-                    <input type="file" id="imageInput" name="file" style="display: none;" onchange="processHandwrittenNotes(event)">
-                </form>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required>
 
-                <form action="" method="post" enctype="multipart/form-data">
-                    <label for="txtInput">
-                        Import txt
-                    </label>
-                    <input type="file" id="txtInput" name="file" style="display: none;" onchange="previewFile()">
-                </form>
-
-                <form action="" method="post" enctype="multipart/form-data">
-                    <label for="fileInput">
-                        Import File
-                    </label>
-                    <input type="file" id="fileInput" name="file" style="display: none;">
-                </form>
-                
-                
-                <button id="quizButton">Quiz</button>
-                <button id="summarizeButton">Summarize</button>
-                <button id="enhanceButton">Enhance</button>
-            </div>
-            <div id="responseBox"></div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="registeration-link">
+            <p>New here?</p>
+            <button onclick="window.location.href='register.html'">Register Now</button>
         </div>
     </div>
-    
-    <script type="importmap">
-        {
-            "imports": {
-                "@google/generative-ai": "https://esm.run/@google/generative-ai"
-            }
-        }
-        </script>
-        <script type="module" src="./resources/scripts/main.js"></script>
-        <script type="module" src="./resources/scripts/flashcard_script.js"></script>
-        <script src="./resources/scripts/image_processing.js" defer></script>
 </body>
 </html>
