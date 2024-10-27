@@ -1,6 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1b1b1b;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://wallpapers.com/images/featured/black-gold-background-optua4rlhb9gnk6t.jpg');
+    background-size: cover; 
+    background-position: center;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -11,7 +13,18 @@ body {
 .sidebar {
     width: 13%;
     height: 100vh;
-    background-color: #111;
+    background-color: #d99920;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.settings-sidebar {
+    width: 13%;
+    height: 100vh;
+    background-color: #d99920;
     color: white;
     display: flex;
     flex-direction: column;
@@ -20,18 +33,36 @@ body {
 }
 
 .sidebar h1 {
-    color: #00f;
+    color: #000000;
+    font-size: 24px;
+}
+
+.settings-sidebar h1 {
+    color: rgb(251, 251, 251);
     font-size: 24px;
 }
 
 .sidebar a {
-    color: #bbb;
+    color: #000000;
     text-decoration: none;
     display: block;
     margin: 15px 0;
 }
 
+.settings-sidebar a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+}
+
 .sidebar a:hover {
+    color: #fff;
+}
+
+.settings-sidebar a:hover {
     color: #fff;
 }
 
@@ -43,12 +74,29 @@ body {
 }
 
 .main {
-    width: 80%;
+    width: 80%; 
+    margin-left: 3.5%; 
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.app-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600; 
+    margin: 0.5em 0;
+}
+
+.app-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400; 
+    margin: 0.2em 0 1em 0;
 }
 
 .content {
@@ -65,7 +113,7 @@ textarea {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #555;
+    border: 1px solid #d99920;
     background-color: #333;
     color: #fff;
     box-sizing: border-box;
@@ -80,7 +128,7 @@ textarea {
 .buttons button, form {
     display: flex;
     align-items: center;
-    background-color: #222;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px 30px;
@@ -92,7 +140,7 @@ textarea {
 }
 
 form {
-    background-color: rgb(1, 1, 147)
+    background-color: #d99920
 }
 
 .buttons button:hover {
