@@ -6,6 +6,7 @@
     <script src="./resources/scripts/processor.js" defer></script>
     <link rel="stylesheet" href="./resources/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
         <title>NoteSage - Example</title>
 </head>
@@ -20,6 +21,9 @@
     </div>
     <div class="main">
         <div class="content">
+            <h2 class="app-title">Welcome to NoteSage</h2>
+            <p class="app-description">Your go-to platform for summarizing, enhancing, and quizzing notes in seconds.</p> 
+
             <textarea id="mainText" placeholder="Enter your prompt here..."></textarea>
             
             <div class="buttons">
@@ -40,38 +44,23 @@
                 </form>
 
                 <form action="" method="post" enctype="multipart/form-data">
-                    <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#fff"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 21.1679V14L12 7L16 14V21.1679" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 14C8 14 9.12676 15 10 15C10.8732 15 12 14 12 14C12 14 13.1268 15 14 15C14.8732 15 16 14 16 14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <label for="handwrittenNotes">
-                        Handwritten Notes
+                    <label for="fileInput">
+                        Import File
                     </label>
-
-                    <input type="handwrittenNotes" id="handwrittenNotesInputs" name="file" style="display: none;">
+                    <input type="file" id="fileInput" name="file" style="display: none;">
                 </form>
-
-                <form action="" method="post" enctype="multipart/form-data">
-                    <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#fff"><path d="M13 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V13" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 19H19M22 19H19M19 19V16M19 19V22" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.89768 8.51296C9.49769 8.28439 9 8.57321 9 9.03391V14.9661C9 15.4268 9.49769 15.7156 9.89768 15.487L15.0883 12.5209C15.4914 12.2906 15.4914 11.7094 15.0883 11.4791L9.89768 8.51296Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <label for="video">
-                        Video
-                    </label>
-                    <input type="video" id="videoInputs" name="file" style="display: none;">
-                </form>
-
-                <form action="" method="post" enctype="multipart/form-data">
-                    <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#fff" stroke-width="2"><path d="M4 13.5V13C4 8.02944 7.58172 4 12 4C16.4183 4 20 8.02944 20 13V13.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17.4382V15.5614C2 14.6436 2.62459 13.8437 3.51493 13.6211L4 13.4998L5.25448 13.1862C5.63317 13.0915 6 13.3779 6 13.7683V19.2313C6 19.6217 5.63317 19.9081 5.25448 19.8134L3.51493 19.3785C2.62459 19.1559 2 18.356 2 17.4382Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 17.4382V15.5614C22 14.6436 21.3754 13.8437 20.4851 13.6211L20 13.4998L18.7455 13.1862C18.3668 13.0915 18 13.3779 18 13.7683V19.2313C18 19.6217 18.3668 19.9081 18.7455 19.8134L20.4851 19.3785C21.3754 19.1559 22 18.356 22 17.4382Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <label for="video">
-                        Audio
-                    </label>
-                    <input type="audio" id="audio" name="file" style="display: none;">
-                </form>
-            </div>
-            <div class="action-buttons">
-                <div>
-                    <button id="quizButton">Quiz</button>
-                    <button id="summarizeButton">Summarize</button>
-                    <button id="flashcardButton">Flashcard</butto>
-                </div>
+                
+                
+                <button id="quizButton">Quiz</button>
+                <button id="summarizeButton">Summarize</button>
+                <button id="enhanceButton">Enhance</button>
             </div>
 
+            <div class="authentication-buttons">
+                <button id="loginButton" onclick="window.location.href='index.html'">Login</button>
+                <button id="signupButton" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+            
 
             <div id="responseBox"></div>
         </div>
