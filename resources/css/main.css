@@ -79,20 +79,21 @@ textarea {
 
 .buttons button, form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #222;
-    color: #fff;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 10px;
+    gap: 2px;
+    justify-content: center;
+    border: solid #FA5000 0.5px;
+    background-color: #fff;
     cursor: pointer;
     margin: 20px;
     font-size: 16px;
-    height: 40px;
-}
-
-form {
-    background-color: rgb(1, 1, 147)
+    height: 100px;
+    width: 155px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 500 !important;
+    font-size: 14px;
 }
 
 .buttons button:hover {
