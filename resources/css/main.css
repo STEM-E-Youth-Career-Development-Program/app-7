@@ -35,6 +35,40 @@ body {
     color: #fff;
 }
 
+.landing{
+    text-align: center;
+    padding: 50px;
+}
+
+.features{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+}
+
+.feature-box{
+    background-color: #656865;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fbfbfb;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color:rgb(137, 162, 196)
+}
+
+.feature-box h2 {
+    color: #f0f0f0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #b0b0b0;
+    font-size: 1em;
+}
+
 .nav-link {
     color: white;
     text-decoration: none;
