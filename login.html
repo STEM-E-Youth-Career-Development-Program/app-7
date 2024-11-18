@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Login to Notesage</h1>
+        <form action="home.html" method="post">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="registeration-link">
+            <p>New here?</p>
+            <button onclick="window.location.href='register.html'">Register Now</button>
+        </div>
+    </div>
+</body>
+</html>
