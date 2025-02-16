@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 *,
 *:before,
 *:after {
@@ -6,69 +8,85 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    flex: auto;
 }
 
 body {
-    background-color: #000;;
+    background-color: #000;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex: auto;
 }
 
 .landing{
     text-align: center;
     padding: 50px;
+    flex: auto;
 }
 
 .text-box {
     padding: 20px;
+    flex: auto;
 }
 
 .features{
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    gap: 15px;
 }
 
 .feature-boxes{
     background-color: #434343;
-    border: 1px solid #fbfbfb;
-    border-radius: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
     justify-content: center;
     text-align: left;
+    position: relative;
+    padding: 20px;
+    flex: auto;
+    width: auto;
 }
 
 .feature-boxes h2, p {
     color: white;
-    font-family: Inter;
+    font-family: 'Inter';
+    font-size:20px;
+    position: relative;
+    z-index:1;
+    flex: auto;
 }
 
 .feature-boxes h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    z-index:1;
+    flex: auto;
 }
-
-
 
 .top-features, .bottom-features{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 10px;
+    flex: auto;
 }
 
-.feature-box i {
-    font-size: x-large;
-}
-
-.feature-box p {
-    font-size: medium;
-}
-
-.feature-box h2 {
-    font-size: larger;
-}
 
 .features-img {
     object-fit: cover;
     width: 100%;
-    max-height: fit-content;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;    
+    right: 0;           
+    left: 0;           
+    width: 100%;           
+    height: 100%;       
+    z-index: 0;
+    opacity: 50%;
+    flex: auto;
 }
