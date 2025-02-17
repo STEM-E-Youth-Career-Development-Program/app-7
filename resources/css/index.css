@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *,
 *:before,
 *:after {
@@ -7,6 +10,130 @@
     list-style: none;
     text-decoration: none;
 }
+
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.header {
+    z-index: 2;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header h1 {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    margin-top: 5vh;
+    left: 40px;
+    font-family: 'Inter';
+}
+
+.navbar {
+    z-index: 2;
+    position: relative;
+    left: 40vw;
+    top: 5vh;
+    height: 48px;
+    width: 430px;
+    border: 2px solid rgb(60, 60, 60);
+    border-radius: 100px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 11px;
+    margin-left: 30px;
+    font-family: "Wix Madefor Text"}
+
+.navbar img {
+    height: 35px;
+    width: 35px;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-right: -20px;
+}
+
+.get-started-button {
+    z-index: 2;
+    position: relative;
+    top: 5vh;
+    left: 39vw;
+    height: 48px;
+    width: 145px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    margin-left: 45px;
+}
+
+.get-started-button a{
+    position: relative;
+    top: 12px;
+    margin-left: 22px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Barlow';
+    font-weight: 500;
+}
+
+.hero-section h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Wix Madefor Text';
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-section h2 {
+    z-index: 2;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 300;
+    position: relative;
+    left: 60vw;
+    top: 32vh;
+}
+
+.hero-section button {
+    z-index: 2;
+    position: relative;
+    left: 82vw;
+    top: 27vh;
+    height: 50px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+.hero-section button a {
+    font-size: 17px;
+    font-family: 'Barlow';
+    font-weight: 600;
+}
+
+.hero-section img {
+    position: absolute;
+    filter: brightness(0.5);
+    opacity: 0.95;
+    z-index: 1;
+    height: 80vh;
+    width: 100vw;
+    top: 12vh;
+}
+
 
 body {
     background-color: #000;;
